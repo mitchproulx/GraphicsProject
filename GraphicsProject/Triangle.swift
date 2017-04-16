@@ -18,5 +18,4 @@ class Triangle: Node {
         let verticesArray = [v0, v1, v2]
         super.init(name: "Triangle", vertices: verticesArray, device: device)
     }
-    
 }
