@@ -16,6 +16,7 @@
 		2361D8EB1EA4141E00B25FD3 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361D8EA1EA4141E00B25FD3 /* Vertex.swift */; };
 		2361D8ED1EA417C100B25FD3 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361D8EC1EA417C100B25FD3 /* Node.swift */; };
 		2361D8EF1EA41B6200B25FD3 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361D8EE1EA41B6200B25FD3 /* Triangle.swift */; };
+		23BA923C1EA42B40009989BB /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA923B1EA42B40009989BB /* Cube.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2361D8EA1EA4141E00B25FD3 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
 		2361D8EC1EA417C100B25FD3 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		2361D8EE1EA41B6200B25FD3 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		23BA923B1EA42B40009989BB /* Cube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				2361D8EC1EA417C100B25FD3 /* Node.swift */,
 				2361D8EE1EA41B6200B25FD3 /* Triangle.swift */,
 				2361D8E81EA4056700B25FD3 /* Shaders.metal */,
+				23BA923B1EA42B40009989BB /* Cube.swift */,
 				2361D8DA1EA4008300B25FD3 /* Main.storyboard */,
 				2361D8DD1EA4008300B25FD3 /* Assets.xcassets */,
 				2361D8DF1EA4008300B25FD3 /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 				2361D8EB1EA4141E00B25FD3 /* Vertex.swift in Sources */,
 				2361D8EF1EA41B6200B25FD3 /* Triangle.swift in Sources */,
 				2361D8D91EA4008300B25FD3 /* ViewController.swift in Sources */,
+				23BA923C1EA42B40009989BB /* Cube.swift in Sources */,
 				2361D8D71EA4008300B25FD3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +324,7 @@
 				2361D8E71EA4008300B25FD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
