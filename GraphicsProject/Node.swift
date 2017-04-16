@@ -55,5 +55,4 @@ class Node {
         commandBuffer.present(drawable)
         commandBuffer.commit()
     }
-    
 }
