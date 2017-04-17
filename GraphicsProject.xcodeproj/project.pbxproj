@@ -16,6 +16,8 @@
 		2361D8EB1EA4141E00B25FD3 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361D8EA1EA4141E00B25FD3 /* Vertex.swift */; };
 		2361D8ED1EA417C100B25FD3 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361D8EC1EA417C100B25FD3 /* Node.swift */; };
 		2361D8EF1EA41B6200B25FD3 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361D8EE1EA41B6200B25FD3 /* Triangle.swift */; };
+		23BA923C1EA42B40009989BB /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA923B1EA42B40009989BB /* Cube.swift */; };
+		23BA92421EA447B4009989BB /* Matrix4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA92411EA447B4009989BB /* Matrix4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		2361D8EA1EA4141E00B25FD3 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
 		2361D8EC1EA417C100B25FD3 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		2361D8EE1EA41B6200B25FD3 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		23BA923B1EA42B40009989BB /* Cube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
+		23BA92411EA447B4009989BB /* Matrix4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +72,12 @@
 				2361D8EC1EA417C100B25FD3 /* Node.swift */,
 				2361D8EE1EA41B6200B25FD3 /* Triangle.swift */,
 				2361D8E81EA4056700B25FD3 /* Shaders.metal */,
+				23BA923B1EA42B40009989BB /* Cube.swift */,
 				2361D8DA1EA4008300B25FD3 /* Main.storyboard */,
 				2361D8DD1EA4008300B25FD3 /* Assets.xcassets */,
 				2361D8DF1EA4008300B25FD3 /* LaunchScreen.storyboard */,
 				2361D8E21EA4008300B25FD3 /* Info.plist */,
+				23BA92411EA447B4009989BB /* Matrix4.swift */,
 			);
 			path = GraphicsProject;
 			sourceTree = "<group>";
@@ -109,6 +115,7 @@
 					2361D8D21EA4008300B25FD3 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = C2MC29S2FT;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -154,7 +161,9 @@
 				2361D8EB1EA4141E00B25FD3 /* Vertex.swift in Sources */,
 				2361D8EF1EA41B6200B25FD3 /* Triangle.swift in Sources */,
 				2361D8D91EA4008300B25FD3 /* ViewController.swift in Sources */,
+				23BA923C1EA42B40009989BB /* Cube.swift in Sources */,
 				2361D8D71EA4008300B25FD3 /* AppDelegate.swift in Sources */,
+				23BA92421EA447B4009989BB /* Matrix4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,11 +288,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = C2MC29S2FT;
 				INFOPLIST_FILE = GraphicsProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quantum.GraphicsProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GraphicsProject/GraphicsProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -292,11 +304,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = C2MC29S2FT;
 				INFOPLIST_FILE = GraphicsProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quantum.GraphicsProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GraphicsProject/GraphicsProject-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -320,6 +334,7 @@
 				2361D8E71EA4008300B25FD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
