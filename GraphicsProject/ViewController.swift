@@ -27,11 +27,9 @@ class ViewController: UIViewController {
         
         device = MTLCreateSystemDefaultDevice() // for access to the GPU
         
-        let projectAngle: Float = 85
-        
         // load projectionMatrix
         projectionMatrix = Matrix4.makePerspectiveView(
-            angle: projectAngle.radians,
+            angle: Float(85).radians,
             aspectRatio: Float(self.view.bounds.size.width / self.view.bounds.size.height),
             nearZ: 0.01,
             farZ: 100.0)
@@ -74,9 +72,8 @@ class ViewController: UIViewController {
     func render() {
         guard let drawable = metalLayer?.nextDrawable() else { return }
         let worldModelMatrix = Matrix4()
-        let angle: Float =  20.0
         worldModelMatrix.translate(x: 0.0, y: 0.0, z: -7.0)
-        worldModelMatrix.rotateAround(x: angle.radians, y: 0.0, z: 0.0)
+        worldModelMatrix.rotateAround(x: Float(20).radians, y: 0.0, z: 0.0)
         
         objectToDraw.render(commandQueue: commandQueue, pipelineState: pipelineState, drawable: drawable, parentModelViewMatrix: worldModelMatrix, projectionMatrix: projectionMatrix ,clearColor: nil)
     }
